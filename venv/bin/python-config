@@ -1,4 +1,4 @@
-#!/Users/Mark/Documents/HackArizona/bot/venv/bin/python
+#!/Users/Mark/Documents/HackArizona/weather-bot/venv/bin/python
 
 import sys
 import getopt
