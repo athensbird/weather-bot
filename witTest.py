@@ -13,11 +13,12 @@ owm = pyowm.OWM(api_key)
 
 def wit_response(message_text):
     resp = client.message(message_text)
+    print('resp, ', resp)
     entity = None
     location = None
     try:
         entity = list(resp['entities'])[1]
-        location = resp['entities'][entity][0].get('value')
+        location = resp['entities']['location'][0]['value']
     except:
         pass
     return location
